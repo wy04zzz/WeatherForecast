@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="database" ></dbname>
+
+    <version value="2" ></version>
+
+    <list>
+        <mapping class="com.gangan.weather.bean.UserBean"></mapping>
+        <mapping class="com.gangan.weather.bean.EventDataBean"></mapping>
+
+    </list>
+</litepal>

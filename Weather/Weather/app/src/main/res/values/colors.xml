@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="shadowColor">#20000000</color>
+    <color name="app_color">#ff3375F6</color>
+    <color name="app_color2">#ff599BF7</color>
+    <color name="button_pressed">#803375F6</color>
+    <color name="app_color_light">#30599BF7</color>
+
+</resources>

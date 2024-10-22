@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:orientation="vertical">
+
+    <com.hjq.shape.layout.ShapeRelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_shadowSize="10dp"
+        app:shape_shadowColor="#20000000"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="6dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:drawablePadding="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+
+    <com.hjq.shape.layout.ShapeRelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_shadowSize="10dp"
+        app:shape_shadowColor="#20000000"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="6dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:drawablePadding="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_password_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        android:drawablePadding="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        app:shape_shadowSize="10dp"
+        app:shape_shadowColor="#20000000"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="6dp"
+        android:drawableEnd="@drawable/ic_arrow_right_gary"/>
+
+
+    <com.hjq.shape.layout.ShapeRelativeLayout
+        android:id="@+id/rl_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_shadowSize="10dp"
+        app:shape_shadowColor="#20000000"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="6dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="深色模式"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:drawablePadding="10dp"
+            android:layout_centerVertical="true"/>
+
+        <Switch
+            android:id="@+id/s_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_exit"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        app:shape_shadowSize="10dp"
+        app:shape_shadowColor="#20000000"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="25dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>

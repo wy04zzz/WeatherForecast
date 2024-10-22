@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bg"
+    android:orientation="horizontal"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:paddingTop="5dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天"
+            android:textSize="14dp"
+            android:textColor="#333333"/>
+        <TextView
+            android:id="@+id/tv_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05.23"
+            android:textSize="12dp"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_aqi"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="污染"
+        android:layout_marginStart="8dp"
+        app:shape_solidColor="@color/colorAccent"
+        android:textColor="@color/white"
+        app:shape_radius="100dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center"
+        android:maxLength="2"/>
+
+    <ImageView
+        android:id="@+id/iv_weather"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="小雨"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23/24"
+        android:textColor="#333333"
+        android:textSize="16dp"/>
+
+</LinearLayout>

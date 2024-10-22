@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_alignParentBottom="true"
+            android:textColor="#333333"
+            android:textSize="30dp"/>
+
+        <com.hjq.shape.layout.ShapeLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:shape_solidColor="#203375F6"
+            app:shape_radius="120dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/iv_aqi"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_aqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优 37"
+                android:textSize="16dp"
+                android:textColor="#333333"/>
+
+        </com.hjq.shape.layout.ShapeLinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白天"
+                android:textSize="18dp"
+                android:textColor="#333333" />
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多云"
+                android:textSize="18dp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多云"
+                android:textSize="18dp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晚上"
+                android:textSize="18dp"
+                android:textColor="#333333" />
+            <ImageView
+                android:id="@+id/iv_pic_night"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_weather_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多云"
+                android:textSize="18dp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_wind_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多云"
+                android:textSize="18dp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
